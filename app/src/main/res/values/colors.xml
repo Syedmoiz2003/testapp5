@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define the black color -->
+
+    <!-- Additional useful color definitions -->
+    <color name="gray">#808080</color>
+    <color name="orange">#FF6600</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="colorPrimary">#4CAF50</color> <!-- Green -->
+    <color name="colorSecondary">#2196F3</color> <!-- Blue -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>
