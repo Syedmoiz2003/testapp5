@@ -9,7 +9,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/img3">
 
         <TextView
             android:id="@+id/text1"
@@ -42,6 +43,7 @@
             android:layout_below="@id/text2"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="30dp"
+            style="@style/CompactImageButtonStyle"
             android:background="@color/white"
             android:src="@drawable/img2" />
 
@@ -72,7 +74,7 @@
             android:inputType="number"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
-            style="@style/CustomButtonStyle" />
+             />
 
 
         <TextView
@@ -103,6 +105,7 @@
             android:layout_below="@+id/text4"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="40dp"
+            style="@style/CompactImageButtonStyle"
             android:src="@drawable/google"
             android:backgroundTint="@color/white"
             />
@@ -116,6 +119,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginLeft="180dp"
             android:src="@drawable/facebook"
+            style="@style/CompactImageButtonStyle"
             android:backgroundTint="@color/white"
             />
         <ImageButton
@@ -126,6 +130,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginLeft="310dp"
             android:src="@drawable/apple"
+            style="@style/CompactImageButtonStyle"
             android:backgroundTint="@color/white"
             />
 

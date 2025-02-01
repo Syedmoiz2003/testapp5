@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.testapp">
 
-    <!-- Set target and minimum SDK versions -->
+    <!-- Specify target and minimum SDK versions -->
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="34" />
@@ -21,6 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Testapp"
+
         tools:targetApi="34">
 
         <!-- Splash Activity (Launcher) -->
@@ -47,6 +48,12 @@
         <activity
             android:name=".app_main"
             android:exported="true" />
+
+        <!-- Profile_main Activity -->
+        <activity
+            android:name=".Profile_main"
+            android:exported="true" />
+
     </application>
 
 </manifest>

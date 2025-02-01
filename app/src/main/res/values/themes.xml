@@ -1,19 +1,57 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme -->
+    <!-- Base compact theme -->
     <style name="Base.Theme.Testapp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Button styling -->
-        <item name="buttonStyle">@style/CustomButtonStyle</item>
+        <!-- Global compact adjustments -->
+        <item name="buttonStyle">@style/CompactButtonStyle</item>
+        <item name="imageButtonStyle">@style/CompactImageButtonStyle</item>
     </style>
 
-    <!-- Theme for your app -->
-    <style name="Theme.Testapp" parent="Base.Theme.Testapp" />
+    <!-- App theme -->
+    <style name="Theme.Testapp" parent="Base.Theme.Testapp">
+        <!-- Optional: Customize specific colors -->
+        <item name="colorPrimary">#6200EE</item> <!-- Purple -->
+        <item name="colorSecondary">#03DAC5</item> <!-- Teal -->
+    </style>
 
-    <!-- Custom button style -->
-    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
-        <!-- Custom background for buttons -->
-        <item name="android:background">@drawable/button_rounded</item>
-        <!-- Customize button text color -->
-        <item name="android:textColor">@color/white</item>
-        <!-- Additional button properties (optional) -->
+    <!-- Compact Button Style -->
+    <style name="CompactButtonStyle" parent="Widget.Material3.Button">
+        <!-- Reduce padding -->
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <!-- Smaller icon size for buttons -->
+        <item name="iconSize">18dp</item>
+        <!-- Reduced text size -->
+        <item name="android:textSize">12sp</item>
+        <!-- Custom elevation -->
+        <item name="android:elevation">2dp</item>
+        <!-- Rounded corners -->
+        <item name="cornerRadius">6dp</item>
+    </style>
+
+    <!-- Compact Image Button Style -->
+    <style name="CompactImageButtonStyle" >
+        <!-- Remove unnecessary padding -->
+        <item name="android:padding">4dp</item>
+        <!-- Adjust icon size -->
+        <item name="android:minWidth">32dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <!-- Custom background tint -->
+        <item name="backgroundTint">#E0E0E0</item>
+    </style>
+
+    <!-- Compact Toolbar Style -->
+    <style name="CompactToolbarStyle" parent="Widget.Material3.Toolbar">
+        <!-- Reduced toolbar height -->
+        <item name="android:height">48dp</item>
+        <item name="titleTextAppearance">@style/CompactToolbarTitle</item>
+    </style>
+
+    <!-- Compact Toolbar Title -->
+    <style name="CompactToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!-- Smaller title text -->
+        <item name="android:textSize">16sp</item>
     </style>
 </resources>
