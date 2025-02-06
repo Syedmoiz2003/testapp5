@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.testapp">
-
-    <!-- Specify target and minimum SDK versions -->
+    package="com.example.testapp"> <!-- Specify target and minimum SDK versions -->
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="34" />
-
+        android:targetSdkVersion="35" />
     <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -21,39 +18,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Testapp"
-
-        tools:targetApi="34">
-
-        <!-- Splash Activity (Launcher) -->
+        tools:targetApi="35">
+        <activity
+            android:name=".jobs"
+            android:exported="false" />
+        <activity
+            android:name=".my_job"
+            android:exported="false" />
+        <activity
+            android:name=".interview"
+            android:exported="false" />
+        <activity
+            android:name=".Courses"
+            android:exported="false" />
+        <activity
+            android:name=".profile_main_1"
+            android:exported="false" /> <!-- Splash Activity (Launcher) -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Welcome Activity -->
+        </activity> <!-- Welcome Activity -->
         <activity
             android:name=".WelcomeActivity"
-            android:exported="true" />
-
-        <!-- Main Activity -->
+            android:exported="true" /> <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
-
-        <!-- app_main Activity -->
+            android:exported="true" /> <!-- app_main Activity -->
         <activity
             android:name=".app_main"
-            android:exported="true" />
-
-        <!-- Profile_main Activity -->
-        <activity
-            android:name=".Profile_main"
-            android:exported="true" />
-
+            android:exported="true" /> <!-- Profile_main Activity -->
     </application>
 
 </manifest>
